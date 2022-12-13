@@ -1,0 +1,25 @@
+{
+  "name": "scrabble-scorer",
+  "version": "1.0.0",
+  "description": "intro to prof web dev assignment 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^3.6.3",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antsega/LaunchCode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Antsega/LaunchCode/issues"
+  },
+  "homepage": "https://github.com/Antsega/LaunchCode#readme"
+}

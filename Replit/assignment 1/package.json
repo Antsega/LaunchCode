@@ -1,0 +1,19 @@
+{
+  "name": "assignment-1",
+  "version": "1.0.0",
+  "description": "completed assignment 1 - launchCode course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antsega/LaunchCode.git"
+  },
+  "author": "Anthony S",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^4.5.0",
+    "readline-sync": "^1.4.10"
+  }
+}

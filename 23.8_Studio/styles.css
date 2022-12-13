@@ -1,0 +1,40 @@
+.body {
+    overflow: hidden;
+    height: 90vh;
+    width: 100%;
+}
+
+#shuttleBackground {
+    background-color: green;
+    display: inline-block;
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    z-index: 99;
+}
+
+#flightStatus {
+    color: green;
+}
+
+#flightDisplay {
+    text-align: left;
+    height: 400px;
+    width: 100%;
+}
+
+#spaceShuttleHeight {
+    display: inline-block;
+    text-align: left;
+    z-index: 1;
+    border: 1px solid red;
+}
+
+.center-block {
+    text-align: left;
+    display: inline-block;
+}
+
+.centered {
+    text-align: left;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fetch Planets</title>
+    <script>
+        window.addEventListener("load", function () {
+            let url = "https://handlers.education.launchcode.org/static/planets.json"
+
+            fetch("https://handlers.education.launchcode.org/static/planets.json").then(function(response) {
+   response.json().then(function(json) {
+      const destination = document.getElementById("destination");
+      let index = 0;
+      destination.addEventListener("click", function(){
+         destination.innerHTML = `
+            <div>
+               <h3>Planet ${json[index].name}</h3>
+               <img src=${json[index].image} height=250></img>
+            </div>
+         `;
+         index = (index + 1) % json.length;
+      });
+   });
+});
+            // fetch(url)
+            //     .then(res => res.json())
+            //     .then(out => {
+            //         for (i in out)
+            //             console.log(out[i])
+
+            //         j = 3;
+            //         const destination = document.getElementById("destination");
+            //         //destination.innerHTML = `<h3>Planet ${out[j].name}</h3>`;
+            //         //const image = document.getElementById('planetImg')
+            //         //console.log(image)
+            //     })
+            //     .catch(err => { console.log(err) });
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Destination</h1>
+    <div id="destination">
+        <h3>Planet</h3>
+        <image id='planetImg' src="https://apod.nasa.gov/apod/image/1609/Europa_Galileo_960.jpg" width="250"
+            height="250"></image>
+    </div>
+</body>
+
+</html>
