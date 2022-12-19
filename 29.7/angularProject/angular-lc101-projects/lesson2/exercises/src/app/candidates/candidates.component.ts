@@ -16,6 +16,10 @@ export class CandidatesComponent implements OnInit {
     {name: 'Champ', data: {age: 9, mass: '36 kg', sidekick: 'Carly'}, image: 'assets/images/Carly.png'}
   ];
 
+  addToCrew(person: object) {
+    if (!this.crew.includes(person))
+    this.crew.push(person);
+  }
   crew = [];
 
   constructor() { }
